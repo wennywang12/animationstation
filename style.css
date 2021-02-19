@@ -1,0 +1,77 @@
+
+@font-face {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fredoka-one-v8-latin-regular.woff') format('woff');
+  }
+
+body{
+    background-color: rgb(107, 164, 238);
+}
+
+h1{
+    font-family: 'Fredoka One';
+    margin-top: 5rem;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 8rem;
+    background: linear-gradient(to right, #f32170, #ffeb07, #ff00eb, #ff00eb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.playicon{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+
+.audio{
+    text-align: center;
+    margin-top: -5rem;
+}
+
+.square{
+  height: 15rem;
+  width: 80rem;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: yellow;
+    }
+  }
